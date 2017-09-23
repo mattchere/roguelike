@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
-import StatusBar from './components/StatusBar';
-import Screen from './components/Screen';
+import '../App.css';
+import StatusBar from './StatusBar';
+import Screen from './Screen';
 
 class App extends Component {
   render() {
