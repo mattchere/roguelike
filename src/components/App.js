@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import StatusBar from './StatusBar';
 import Screen from './Screen';
+import {map1} from '../maps/Map1';
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
         </div>
         <div className="game">
           <StatusBar />
-          <Screen />
+          <Screen screen={map1} />
         </div>
       </div>
     );

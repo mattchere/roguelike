@@ -23,7 +23,7 @@ p {
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
-  width: 800px;
+  width: 798px;
 }
 
 .status-bar li {
@@ -33,5 +33,12 @@ p {
 
 .screen {
   border: 2px solid black;
-  height: 400px;
+  height: 404px;
+}
+
+.cell {
+  display: inline-block;
+  height: 25px;
+  vertical-align: top;
+  width: 25px;
 }

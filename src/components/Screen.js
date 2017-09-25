@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
 import Cell from './Cell';
+import PropTypes from 'prop-types';
 
 class Screen extends Component {
   render() {
