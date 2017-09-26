@@ -5,12 +5,18 @@ import PropTypes from 'prop-types';
 
 class Screen extends Component {
   render() {
+    const {x1, x2, y1, y2} = this.props.screen
     return (
       <div className="screen">
         {this
           .props
-          .screen
-          .map(row => row.map(cell => <Cell type={cell} />))}
+          .background
+          .map((row,i) => 
+            row.map((cell,j) => 
+              i >= x1 && i <= x2 && j >= y1 && j <= y2 ?
+              <Cell key={Number(String(i) + String(j))} type={cell} /> :
+              undefined
+          ))}
       </div>
     );
   }

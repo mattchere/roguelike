@@ -14,7 +14,7 @@ class App extends Component {
         </div>
         <div className="game">
           <StatusBar />
-          <Screen screen={map1} />
+          <Screen background={map1} screen={{x1: 0, x2: 15, y1: 0, y2: 29}} />
         </div>
       </div>
     );
