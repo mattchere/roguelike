@@ -1,4 +1,4 @@
-import {map1} from '../maps/Map1';
+import {map1} from '../maps/maps';
 
 const mapBackground = (state = map1, action) {
   switch (action.type) {
