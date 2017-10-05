@@ -7,11 +7,11 @@ import {createStore} from 'redux';
 import registerServiceWorker from './registerServiceWorker';
 import roguelikeApp from './reducers/index';
 
-let store = createStore(roguelikeApp, window.STATE_FROM_SERVER)
+let store = createStore(roguelikeApp)
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />,
-  // </Provider>, 
+    <App />
+  </Provider>, 
   document.getElementById('root'));
 registerServiceWorker();

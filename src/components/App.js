@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import StatusBar from './StatusBar';
-import Screen from './Screen';
-import {map1} from '../maps/maps';
+import VisibleScreen from '../containers/VisibleScreen';
 
 class App extends Component {
   render() {
@@ -14,11 +13,12 @@ class App extends Component {
         </div>
         <div className="game">
           <StatusBar />
-          <Screen background={map1} screen={{x1: 0, x2: 15, y1: 0, y2: 29}} />
+          <VisibleScreen />
         </div>
       </div>
-    );
-  }
-}
-
+        );
+      }
+    }
+    
+    // <Screen background={map1} screen={{x1: 0, x2: 15, y1: 0, y2: 29}} />
 export default App;

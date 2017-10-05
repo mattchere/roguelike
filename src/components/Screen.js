@@ -7,7 +7,7 @@ class Screen extends Component {
   render() {
     const {x1, x2, y1, y2} = this.props.screen
     return (
-      <div className="screen">
+      <div className="screen" onKeyDown={this.props.onKeyDown}>
         {this
           .props
           .background
@@ -19,6 +19,10 @@ class Screen extends Component {
           ))}
       </div>
     );
+  }
+
+  componentDidMount() {
+    document.addEventListener('keydown', this.props.onKeyDown);
   }
 }
 

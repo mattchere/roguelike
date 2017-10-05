@@ -8,3 +8,5 @@ const mapBackground = (state = map1, action) => {
       return state;
   }
 }
+
+export default mapBackground;
