@@ -17,6 +17,7 @@ export const switchMap = (newMap) => {
   }
 }
 
+
 // export const changeStat = (stat, value) => {
 //   return {
 //     type: 'CHANGE_STAT',
