@@ -4,7 +4,7 @@ import '../App.css';
 class StatusBar extends Component {
   render() {
     return (
-      <p>{this.props.name}: 1</p>
+      <p>{this.props.name}: {this.props.value}</p>
     );
   }
 }

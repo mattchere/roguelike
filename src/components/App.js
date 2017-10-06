@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import StatusBar from './StatusBar';
+import UpdatedStatusBar from '../containers/UpdatedStatusBar';
 import VisibleScreen from '../containers/VisibleScreen';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
           <p>Kill the boss to win</p>
         </div>
         <div className="game">
-          <StatusBar />
+          <UpdatedStatusBar />
           <VisibleScreen />
         </div>
       </div>

@@ -18,15 +18,15 @@ export const switchMap = (newMap) => {
 }
 
 
-// export const changeStat = (stat, value) => {
-//   return {
-//     type: 'CHANGE_STAT',
-//     payload: {
-//       stat: stat,
-//       value: value
-//     }
-//   }
-// }
+export const changeStat = (stat, value) => {
+  return {
+    type: 'CHANGE_STAT',
+    payload: {
+      stat: stat,
+      value: value
+    }
+  }
+}
 
 export const moveMap = (direction) => {
   return {
