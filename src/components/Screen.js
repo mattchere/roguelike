@@ -7,13 +7,13 @@ class Screen extends Component {
   render() {
     const {x1, x2, y1, y2} = this.props.screen
     return (
-      <div className="screen" onKeyDown={this.props.onKeyDown}>
+      <div className="screen">
         {this
           .props
           .background
           .map((row,i) => 
             row.map((cell,j) => 
-              i >= x1 && i <= x2 && j >= y1 && j <= y2 ?
+              i >= y1 && i <= y2 && j >= x1 && j <= x2 ?
               <Cell key={Number(String(i) + String(j))} type={cell} /> :
               undefined
           ))}
@@ -22,7 +22,11 @@ class Screen extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('keydown', this.props.onKeyDown);
+    this.onKeyDown = document.addEventListener('keydown', this.props.onKeyDown);
+  }
+
+  componentWillUnmount() {
+    this.onKeyDown();
   }
 }
 

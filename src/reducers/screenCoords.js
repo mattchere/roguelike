@@ -1,8 +1,8 @@
 const initialState = {
   x1: 0,
-  x2: 15,
+  x2: 29,
   y1: 0,
-  y2: 29
+  y2: 15
 };
 
 const mapSize = [40, 20];
