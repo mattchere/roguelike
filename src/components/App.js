@@ -20,5 +20,4 @@ class App extends Component {
       }
     }
     
-    // <Screen background={map1} screen={{x1: 0, x2: 15, y1: 0, y2: 29}} />
 export default App;
